@@ -1,0 +1,210 @@
+body {
+    background-color: #0e0128;
+    margin: auto;
+}
+
+main {
+    padding-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: auto;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: url(images/planet.png);
+    margin-bottom: 30px;
+    /* position: relative; */
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+#column1 {
+    background-color: #0e0128;
+    border: 2px rgb(194, 124, 255) solid;
+    border-radius: 30px;
+    width: 320px;
+    height: 470px;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+main section h2 {
+    padding-top: 10px;
+}
+
+main section {
+    padding-left: 20px;
+}
+
+main ul li {
+    list-style-type: none;
+    background-color: rgba(176, 221, 243, 0.992);
+    padding: 8px;
+    border-radius: 18px;
+    width: 240px;
+    height: 28px;
+    margin: auto;
+    margin-bottom: 9px;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #0e0128;
+    font-weight: 520;
+}
+
+main ul li:hover {
+    background-color: rgb(194, 124, 255);
+}
+
+main ul {
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+#column2 {
+    background-color: #0e0128;
+    border: 2px rgb(194, 124, 255) solid;
+    border-radius: 30px;
+    width: 320px;
+    height: 370px;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+#column3 {
+    background-color: #0e0128;
+    border: 2px rgb(194, 124, 255) solid;
+    border-radius: 30px;
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+#column3 li {
+    height: 200px;
+}
+
+footer {
+    /* background-color: #5a077db8; */
+    background: rgb(14,1,40);
+    background: linear-gradient(152deg, rgba(14,1,40,1) 25%, rgba(90,7,125,1) 44%, rgba(125,7,19,1) 66%, rgba(14,1,40,1) 90%);
+    height: 150px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer #designby {
+    padding-top: 60px;
+}
+
+footer p a {
+    color: rgba(255, 255, 255, 0.779);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer p a:hover {
+    background-color: #851297a2;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#logo:hover {
+    transform: rotate(2475deg);
+    transition: all 4s ease-in-out;
+    cursor: pointer;
+}
+
+#comet {
+    transform: rotate(69deg);
+    width: 20%;
+    height: 3px;
+    position: relative;
+    top: 200px;
+    left: 0;
+}
+
+#comet1 {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#comet:hover {
+    animation: shootingstar 6s forwards;
+    cursor: pointer;
+}
+
+@keyframes shootingstar {
+    from {left: 0;}
+    to {left: calc(100% - 30px);}
+}
+
+/* font-family: 'Bitter', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@media only screen and (min-width: 600px) {
+    header {
+        width: 1100px;
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
+    body {
+        max-width: 1200px;
+        min-width: 800px;
+        max-height: 750px;
+    }
+
+    main {
+        display: flex;
+        gap: 12px;
+        margin: auto;
+        margin-bottom: 40px;
+        max-width: 1100px;
+        padding-right: 10px;
+    }
+
+    main ul {
+        padding-right: 30px;
+    }
+
+    #column1 {
+        height: 500px;
+    }
+
+    #column2 {
+        height: 400px;
+    }
+
+    #column3 {
+        height: 400px;
+    }
+}
