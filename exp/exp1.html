@@ -8,22 +8,21 @@
 
 <body>
     <h1>Experiment 1</h1>
-    <h2>To open the console to see the functionality of the code, press and hold option, cammand, and i at the same time.</h2>
+    <h2>To open the console to see the functionality of the code, press and hold option, command, and i at the same time.</h2>
 
     <script>
         
-        // My program will write a loop that makes seven calls to console.log to output the following triangle:
-        /*
-         #
-         ##
-         ###
-         ####
-         #####
-         ######
-         ####### 
-         */
+        // My program will take a lowercase string and capitalize the first letter of each word in the string.
 
-         
+        const str = 'This is an experiment';
+        const arr = str.split(" ");
+        
+        for (var i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+        }
+
+        const str2 = arr.join(" ");
+        console.log(str2);
 
     </script>
 

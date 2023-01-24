@@ -16,7 +16,6 @@ header {
     padding: 20px;
     background-image: url(images/planet.png);
     margin-bottom: 30px;
-    /* position: relative; */
 }
 
 header h1 {
@@ -104,7 +103,6 @@ main ul {
 }
 
 footer {
-    /* background-color: #5a077db8; */
     background: rgb(14,1,40);
     background: linear-gradient(152deg, rgba(14,1,40,1) 25%, rgba(90,7,125,1) 44%, rgba(125,7,19,1) 66%, rgba(14,1,40,1) 90%);
     height: 150px;
@@ -164,11 +162,6 @@ footer p a:hover {
     from {left: 0;}
     to {left: calc(100% - 30px);}
 }
-
-/* font-family: 'Bitter', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
 @media only screen and (min-width: 600px) {
     header {
