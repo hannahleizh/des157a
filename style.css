@@ -50,11 +50,11 @@ main section {
 
 main ul li {
     list-style-type: none;
-    background-color: rgba(176, 221, 243, 0.992);
+    background-color: rgba(176, 221, 243, 0.785);
     padding: 8px;
     border-radius: 18px;
     width: 240px;
-    height: 28px;
+    height: 25px;
     margin: auto;
     margin-bottom: 9px;
 }
@@ -79,7 +79,7 @@ main ul {
     border: 2px rgb(194, 124, 255) solid;
     border-radius: 30px;
     width: 320px;
-    height: 370px;
+    height: 470px;
     margin: auto;
     padding-bottom: 10px;
     margin-bottom: 13px;
@@ -91,7 +91,7 @@ main ul {
     border: 2px rgb(194, 124, 255) solid;
     border-radius: 30px;
     width: 320px;
-    height: 320px;
+    height: 470px;
     margin: auto;
     padding-bottom: 10px;
     margin-bottom: 13px;
@@ -190,14 +190,14 @@ footer p a:hover {
     }
 
     #column1 {
-        height: 500px;
+        height: 470px;
     }
 
     #column2 {
-        height: 400px;
+        height: 470px;
     }
 
     #column3 {
-        height: 400px;
+        height: 470px;
     }
 }

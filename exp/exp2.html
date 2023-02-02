@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Experiment 2</title>
+</head>
+
+<body>
+
+<!-- My code will prompt the user to write their favorite color from a list of colors, and change the background color of the page to the user's answer -->
+
+    <script>
+        var color = prompt("Which color is your favorite?", "");
+        var choices = ['red', 'blue', 'green'];
+
+        var change = function(){
+
+            if (color == "red" || color == "blue" || color == "green"){
+                var body = document.querySelector("body");
+                body.style.backgroundColor = ${prompt};
+            }
+
+            else {
+                alert("you didn't choose the right color!");
+            }
+
+            // document.body.style.background = "red";
+            // var background = document.querySelector("body");
+        }
+
+    </script>
+
+</body>
+</html>
