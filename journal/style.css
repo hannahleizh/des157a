@@ -1,0 +1,81 @@
+/* Body */
+body {
+    background: rgb(2,11,24);
+    background: linear-gradient(180deg, rgba(2,11,24,1) 0%, rgba(15,29,44,1) 46%, rgba(27,44,61,1) 100%);
+    color: white;
+    margin: auto;
+}
+
+#indexbod {
+    text-align: center;
+}
+
+body a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+
+/* Main */
+#indexmain {
+    display: flex;
+    gap: 10px;
+}
+
+main {
+    padding: 19px;
+    margin-bottom: 70px;
+}
+
+
+/* Header Home */
+header {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+header h4 {
+    font-weight: 400;
+    padding: 6px;
+}
+
+
+/* Call to Action Button Home */
+#cta a {
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 10px;
+    background: blueviolet;
+}
+
+#cta {
+    margin-top: 40px;
+    padding: 25px;
+}
+
+#cta a:hover {
+    background: rgb(156, 88, 219);
+}
+
+
+/* Articles */
+#journalmain article {
+    margin: auto;
+    background: rgb(36, 56, 76);
+    width: 800px;
+}
+
+#journalmain article p {
+    margin: auto;
+    width: 700px;
+}
+
+/* Footer */
+footer {
+    height: 150px;
+    background: rgb(19, 32, 45);
+}
+
+footer p {
+    padding: 70px;
+}
