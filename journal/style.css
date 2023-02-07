@@ -20,10 +20,12 @@ body a {
 #indexmain {
     display: flex;
     gap: 10px;
+    width: 940px;
 }
 
 main {
     padding: 19px;
+    margin: auto;
     margin-bottom: 70px;
 }
 
@@ -59,6 +61,10 @@ header h4 {
 
 
 /* Articles */
+#indexmain section {
+    margin: auto;
+}
+
 #journalmain article {
     margin: auto;
     background: rgb(36, 56, 76);
@@ -78,4 +84,5 @@ footer {
 
 footer p {
     padding: 70px;
+    color: rgb(161, 175, 186);
 }
