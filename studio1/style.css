@@ -3,6 +3,11 @@ body {
     background: #FFB8B8;
 }
 
+input[type="text"]:focus {
+    border:1px solid #D6D9DC;
+    outline: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* Header */
 header {
@@ -10,6 +15,7 @@ header {
     width: 1000px;
     height: 115px;
     background: #FF9D9D;
+    border-radius: 10px;
 }
 
 header h1 {
@@ -31,7 +37,7 @@ main {
     height: 750px;
     position: relative;
     margin: auto;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 main h3 {
@@ -62,8 +68,9 @@ main p {
     width: 260px;
     height: 36px;
     left: 36px;
-    top: 64px;
+    top: 60px;
     background: #ddcbcb;
+    border: 1px solid #968686;
 }
 
 /* Nouns */
@@ -93,6 +100,7 @@ main p {
     left: 35px;
     top: 88px;
     background: #FD4922;
+    border: 1px solid #74210f;
 }
 
 #noun2 {
@@ -102,6 +110,7 @@ main p {
     left: 187px;
     top: 88px;
     background: #FD4922;
+    border: 1px solid #74210f;
 }
 
 #noun p {
@@ -122,6 +131,7 @@ main p {
     left: 35px;
     top: 190px;
     background: #FF7658;
+    border: 1px solid #aa391f;
 }
 
 /* Verbs */
@@ -149,7 +159,7 @@ main p {
     left: 40px;
     top: 104px;
     background: #FFD770;
-    border: 1px solid #FD5733;
+    border: 1px solid #b18c2c;
 }
 
 #verb2 {
@@ -159,7 +169,7 @@ main p {
     left: 40px;
     top: 172px;
     background: #FFD770;
-    border: 1px solid #FD4922;
+    border: 1px solid #b18c2c;
 }
 
 #verb3 {
@@ -169,7 +179,7 @@ main p {
     left: 40px;
     top: 240px;
     background: #FFD770;
-    border: 1px solid #F9451D;
+    border: 1px solid #b18c2c;
 }
 
 /* Adjectives */
@@ -197,6 +207,7 @@ main p {
     left: 30px;
     top: 101px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj2 {
@@ -206,6 +217,7 @@ main p {
     left: 30px;
     top: 156px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj3 {
@@ -215,6 +227,7 @@ main p {
     left: 30px;
     top: 211px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj4 {
@@ -224,6 +237,7 @@ main p {
     left: 30px;
     top: 264px;  
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj5 {
@@ -233,6 +247,7 @@ main p {
     left: 30px;
     top: 317px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj6 {
@@ -242,6 +257,7 @@ main p {
     left: 30px;
     top: 370px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj7 {
@@ -251,6 +267,7 @@ main p {
     left: 199px;
     top: 101px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj8 {
@@ -260,6 +277,7 @@ main p {
     left: 199px;
     top: 156px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 #adj9 {
@@ -269,27 +287,28 @@ main p {
     left: 199px;
     top: 211px;
     background: #FFB4A4;
+    border: 1px solid #924b3b;
 }
 
 
 /* Done */
 #done {
     position: absolute;
-    left: 989px;
-    top: 664px;
+    left: 1040px;
+    top: 694px;
     padding: 30px;
-}
-
-#done a {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 10px;
-    background-color: #FF9D9D;
-    padding: 13px;
+    border: 0px;
+    background-color: #eb7777;
+    padding: 15px;
     font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
 }
 
-#done a:hover {
-    background-color: #d47d7d;
+#done:hover {
+    background-color: #ad5b5b;
 }
