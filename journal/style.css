@@ -67,7 +67,7 @@ header h4 {
 
 #journalmain article {
     margin: auto;
-    background: rgb(36, 56, 76);
+    background: rgb(30, 50, 70);
     width: 800px;
 }
 
@@ -76,6 +76,7 @@ header h4 {
     width: 700px;
 }
 
+ 
 /* Footer */
 footer {
     height: 150px;
