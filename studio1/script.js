@@ -2,6 +2,11 @@
     'use strict';
     console.log('reading js');
 
+    // document.querySelector('.open').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     document.querySelector('#overlay').className = 'showing';
+    // });
+
     document.querySelector('.close').addEventListener('click', function(e){
         e.preventDefault();
         document.querySelector('#overlay').className = 'hidden';
@@ -48,7 +53,6 @@
         }
         madlib.innerHTML = mytext;
         document.querySelector('#overlay').className = 'showing';
-
 
     });
 
