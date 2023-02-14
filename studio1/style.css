@@ -62,7 +62,6 @@ main p {
 }
 
 #name1 {
-    text-decoration: underline;
     position: absolute;
     width: 260px;
     height: 36px;
@@ -291,7 +290,7 @@ main p {
 
 
 /* Done */
-#done {
+.open {
     position: absolute;
     left: 1040px;
     top: 694px;
@@ -308,6 +307,79 @@ main p {
     font-weight: 600;
 }
 
-#done:hover {
+.open:hover {
     background-color: #ad5b5b;
+}
+
+/* Overlay */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #FF9D9D;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 650px;
+    margin-top: 90px;
+}
+
+.close:hover {
+    background-color: #ad5b5b;
+}
+
+#overlay {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.483);
+    top: -75px;
+    left: -250px;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlay article {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+#overlay article h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #FF9D9D;
+    font-size: 40px;
+    text-align: center;
+}
+
+#madlib {
+    font-family: 'Poppins', sans-serif;
+    color: #a44b4b;
+    font-size: x-large;
+    padding-top: 25px;
+    margin-left: 55px;
+    margin-right: 55px;
+    line-height: 40px;
 }

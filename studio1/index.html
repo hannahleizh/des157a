@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <h1>Generate Your Ad</h1>
+        <h1>Create Your Jingle</h1>
     </header>
     <main>
         <form id="myform">
@@ -50,9 +50,19 @@
                 <input type="text" id="adj8">
                 <input type="text" id="adj9">
             </article>
+
+            <input type="submit" value="submit" class="open">
+
         </form>
 
-        <input type="submit" id="done" value="Submit">
+        <section id="overlay" class="hidden">
+            <article>
+                <h3>Jingle on!</h3>
+                <p id="madlib"></p>
+                <button class="close">Close</button>
+            </article>
+        </section>
+
     </main>
 </body>
 </html>
