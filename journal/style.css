@@ -69,11 +69,17 @@ header h4 {
     margin: auto;
     background: rgb(30, 50, 70);
     width: 800px;
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 #journalmain article p {
     margin: auto;
     width: 700px;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
  
