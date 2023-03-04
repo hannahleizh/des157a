@@ -115,6 +115,8 @@ header p {
 
 img {
     border: 10px rgb(234, 224, 210) ridge;
+    width: 250px;
+    height: 300px;
 }
 
 #lazysusan {
