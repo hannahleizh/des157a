@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat:wght@300;400;600;700& family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Montserrat:wght@300;400;600;700&family=Paytone+One&family=Poppins:wght@600&family=Roboto:wght@100&family=Rubik+Iso&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script src="script.js" defer></script>
@@ -15,28 +15,33 @@
 <body>
     <header>
         <h1>Game of PIG</h1>
+        <p><a href="#" class="open">How to Play</a></p>
     </header>
     <main>
-        <button id="roll">Roll Dice</button>
+        <div id="gamecontrol">
+            <h2 id="h21">Start Game</h2>
+            <img src="images/pig2.png" alt="pig2" width="50" height="50" id="pig2">
+            <img src="images/dice.png" alt="dice" width="400" id="dice">
+            <button id="startgame">Start as Random Player</button>
+        </div>
         
-        <section id="alert">
-            <p>Alert</p>
-            <p>This is information</p>
-        </section>
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
     </main>
-    <p><a href="#" class="open">How to Play</a></p>
-    <button id="quit">Quit Game</button>
-
     <!-- overlay how to play -->
     <section id="overlay" class="hidden">
         <article>
             <h2>How to Play</h2>
-            <img src="images/pig.png" alt="pig" width="180px" height="140px">
+            <img src="images/pig.png" alt="pig" width="150" height="110">
             <p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a “one”. If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a “one” was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
 
             <p>Oh, and if you roll two “ones” (snake eyes), your current score gets zeroed out. So don’t do that.</p>
             <button class="close">Close</button>
         </article>
     </section>
+    <footer>
+        <p><a href="sources.html">Sources</a></p>
+    </footer>
 </body>
 </html>
