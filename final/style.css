@@ -1,7 +1,21 @@
 body {
     margin: auto;
-    background: #fde2ed;
-    color: rgba(132, 79, 79, 0.961);
+    background: #fbfaf7;
+    color: rgba(115, 67, 67, 0.961);
+    text-align: center;
+    width: 80vw;
+}
+
+#row1 {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+#row2 {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
 }
 
 header {
@@ -9,5 +23,9 @@ header {
 }
 
 article {
-    background: #e9b8cb;
+    background: #d0e1c3;
+    display: block;
+    border-radius: 15px;
+    box-shadow: -8px 8px 10px #99a390;
+    padding: 25px;
 }
