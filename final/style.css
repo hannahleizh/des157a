@@ -1,0 +1,13 @@
+body {
+    margin: auto;
+    background: #fde2ed;
+    color: rgba(132, 79, 79, 0.961);
+}
+
+header {
+    text-align: center;
+}
+
+article {
+    background: #e9b8cb;
+}
