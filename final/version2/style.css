@@ -1,0 +1,312 @@
+/* body */
+body {
+    background: linear-gradient(-45deg, #eceaa4, #e4a4d0, #9cc1e1, #a4e8a1);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    font-family: 'Inter', sans-serif;
+}
+
+#container {
+    width: 1050px;
+    height: 592px;
+    position: relative;
+    top: 70px;
+    left: -10px;
+    margin: auto;
+}
+
+#container div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+#container div img {
+    border: none;
+    /* width: 300px;
+    height: 200px; */
+}
+
+/* body color gradient change */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* body color change when hover */
+.pagecolor2 {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 6s ease infinite;
+    background-size: 300% 300%;
+}
+
+.pagecolor1 {
+    background: linear-gradient(-45deg, #eceaa4, #e4a4d0, #9cc1e1, #a4e8a1);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+}
+
+/* header */
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    top: 6%;
+    left: 4%;
+}
+
+header h2 {
+    position: absolute;
+    top: 14%;
+    left: 4%;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+header p a {
+    position: absolute;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6a7879;
+    background: rgba(255, 255, 255, 0.343);
+    padding: 9px;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+header p a:hover {
+    font-size: large;
+    transition: all 1s;
+    background: rgba(255, 255, 255, 0.779);
+}
+
+#portal {
+    top: 2%;
+    left: 2%;
+}
+
+#original {
+    top: 2%;
+    right: 2%;
+}
+
+/* overall picture */
+#lazysusan {
+    position: absolute;
+    transition: all 2s ease;
+}
+
+#lazysusan {
+    border: none;
+}
+
+/* spin button */
+#spin {
+    position: absolute;
+    top: 560px;
+    right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: #25302fa4;
+
+    background: #d5fff597;
+    border: 0px solid;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#spin:hover {
+    background: #d5fff597;
+}
+
+/* dish placement */
+#raspberry {
+    top: 360px;
+    left: 375px;
+}
+
+#salmon {
+    top: 250px;
+    left: 10px;
+}
+
+#pineapple {
+    top: 30px;
+    left: 160px;
+}
+
+#dimsum {
+    top: 10px;
+    left: 560px;
+}
+
+#ramen {
+    top: 210px;
+    left: 720px;
+}
+
+/* hover and zoom effects */
+#esc {
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.start {
+    width: 1050px;
+    left: 0;
+    top: 0;
+}
+
+.raspberry,
+.salmon,
+.pineapple,
+.dimsum,
+.ramen {
+    width: 2050px;
+}
+
+.raspberry {
+    top: -430px;
+    left: -550px;
+
+}
+
+.salmon {
+    top: -250px;
+    left: -40px;
+}
+
+.pineapple {
+    top: -60px;
+    left: -260px;
+}
+
+.dimsum {
+    top: 10px;
+    left: -730px;
+}
+
+.ramen {
+    top: -260px;
+    left: -900px;
+}
+
+/* overlay */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+img {
+    border: 10px rgb(234, 224, 210) ridge;
+}
+
+/* overlay close */
+#container2 section article button {
+    position: absolute;
+    border-radius: 10px;
+    border: 0px;
+    width: 90px;
+    height: 40px;
+    background: aliceblue;
+    color: #849591;
+    font-size: large;
+    font-weight: 550;
+    top: 660px;
+    left: 400px;
+}
+#container2 button:hover {
+    background: rgb(216, 224, 231);
+}
+
+/* overlay style */
+#container2 section {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);    
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#container2 section article {
+    box-sizing: border-box;
+    background: #c0d2ce;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 750px;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    line-height: 27px;
+    font-size: large;
+    padding: 40px;
+}
+
+/* eat me buttons */
+#container p a {
+    position: absolute;
+    transition: .5s ease;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: #3a4644;
+
+    background-color: #ecfffb;
+    border: 0px solid;
+    padding: 10px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#raspbutton a {
+    top: 440px;
+    left: 420px;
+}
+
+#salbutton a {
+    top: 380px;
+    left: 200px;
+}
+
+#pinebutton a {
+    top: 150px;
+    left: 290px;
+}
+
+#dimbutton a {
+    top: 200px;
+    left: 580px;
+}
+
+#rambutton a {
+    top: 310px;
+    left: 740px;
+}

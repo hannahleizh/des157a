@@ -134,27 +134,27 @@ header p a:hover {
 /* dish placement */
 #raspberry {
     top: 360px;
-    left: 375px;
+    left: 435px;
 }
 
 #salmon {
     top: 250px;
-    left: 10px;
+    left: 70px;
 }
 
 #pineapple {
     top: 30px;
-    left: 160px;
+    left: 220px;
 }
 
 #dimsum {
     top: 10px;
-    left: 560px;
+    left: 620px;
 }
 
 #ramen {
     top: 210px;
-    left: 720px;
+    left: 780px;
 }
 
 /* hover and zoom effects */
