@@ -1,7 +1,7 @@
 /* body */
 body {
     background: linear-gradient(-45deg, #eceaa4, #e4a4d0, #9cc1e1, #a4e8a1);
-    animation: gradient 10s ease infinite;
+    animation: gradient 8s ease infinite;
     background-size: 400% 400%;
     font-family: 'Inter', sans-serif;
 }
@@ -49,8 +49,35 @@ body {
 
 .pagecolor1 {
     background: linear-gradient(-45deg, #eceaa4, #e4a4d0, #9cc1e1, #a4e8a1);
-    animation: gradient 10s ease infinite;
+    animation: gradient 8s ease infinite;
     background-size: 400% 400%;
+}
+
+/* audio */
+audio {
+    opacity: 0;
+}
+
+#music {
+    position: absolute;
+    top: 560px;
+    right: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #25302fa4;
+
+    background: #e1fff8c5;
+    border: 0px solid;
+    padding: 10px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#music:hover {
+    background: #f1fcf9e8;
 }
 
 /* header */
@@ -60,6 +87,25 @@ header h1 {
     position: absolute;
     top: 6%;
     left: 4%;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(142, 142, 142, 0.54); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 9s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(182, 182, 182, 0.638); }
 }
 
 header h2 {
@@ -68,7 +114,7 @@ header h2 {
     left: 4%;
     font-weight: 500;
     padding-top: 10px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 header p a {
@@ -216,7 +262,8 @@ header p a:hover {
 }
 
 img {
-    border: 10px rgb(234, 224, 210) ridge;
+    border: 10px rgb(252, 248, 243) ridge;
+    border-radius: 20px;
 }
 
 /* overlay close */
@@ -226,21 +273,21 @@ img {
     border: 0px;
     width: 90px;
     height: 40px;
-    background: aliceblue;
-    color: #849591;
-    font-size: large;
+    background: rgba(144, 190, 200, 0.924);
+    color: #f3faf8;
+    font-size: 19px;
     font-weight: 550;
-    top: 660px;
-    left: 400px;
+    top: 670px;
+    left: 440px;
 }
 #container2 button:hover {
-    background: rgb(216, 224, 231);
+    background: rgba(163, 213, 224, 0.924);
 }
 
 /* overlay style */
 #container2 section {
     position: absolute;
-    background-color: rgba(0,0,0,0.5);    
+    background-color: rgba(110, 121, 134, 0.5);    
     top: 0;
     left: 0;
     width: 100vw;
@@ -248,23 +295,47 @@ img {
     transition-property: opacity, visibility;
     transition-duration: 1s;
     transition-timing-function: ease;
+    color: #3a4644;
 }
 
 #container2 section article {
     box-sizing: border-box;
-    background: #c0d2ce;
+    background: #dcebe8;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 550px;
-    height: 750px;
+    width: 580px;
+    height: 730px;
     border-radius: 20px;
     margin: auto;
     text-align: center;
     line-height: 27px;
-    font-size: large;
-    padding: 40px;
+    font-size: 17px;
+    padding: 50px;
+    padding-top: 23px;
+}
+
+#stars {
+    border: none;
+    position: absolute;
+    top: 454px;
+    right: 160px;
+    animation: bounce 2s both ease infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-6px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+
+#rate {
+    text-align: left;
+    padding-left: 115px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #6a7879;
 }
 
 /* eat me buttons */

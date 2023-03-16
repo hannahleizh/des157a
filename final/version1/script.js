@@ -18,14 +18,16 @@
 
     const fruitButton = document.querySelectorAll("#container p a");
     const fruitOverlay = document.querySelectorAll("#container2 section");
+    const fruitArticle = document.querySelectorAll("#container2 section article");
     const overlayClose = document.querySelectorAll("#container2 section article button");
 
 
     // Zoom in and out with hover
+
     function zoomPhoto(event){
-        const thisSpot = event.target.id;
-        console.log(`zooming into ${thisSpot}`);
-        switch (thisSpot){
+        const thisCorner = event.target.id;
+        // console.log(`zooming into ${thisSpot}`);
+        switch (thisCorner){
             case 'raspberry': theImg.className = 'raspberry';
             setTimeout(function(){
                 raspButton.className = "showing";
@@ -63,35 +65,49 @@
         }
     }
 
-    // Add event listeners to each of the hotspots
+
     hotSpots.forEach(function (eachSpot) {
-        // when you mouse over a hotspot, zoom in on it.
         eachSpot.addEventListener('mouseover', zoomPhoto);
         eachSpot.addEventListener('mouseover', function(){
             document.querySelector('body').className = 'pagecolor2';
         });
 
-        // when you mouse out of a hotspot, update thisSpot to 
-        // indicate you are not over a hotspot.
         eachSpot.addEventListener('mouseout', function () {
-            thisSpot = 'out';
-            console.log(thisSpot);
-
+            theImg.className = 'start';
             document.querySelector('body').className = 'pagecolor1';
 
-            // theImg.className = 'start';
-            
             hideButton();
 
-            // document.addEventListener('keydown', function(e){
-            //     if(e.key === 'Escape'){
-            //         theImg.className = 'start';
-            //     }
-            // });
-
-
+            document.addEventListener('keydown', function(e){
+                if(e.key === 'Escape'){
+                    theImg.className = 'start';
+                }
+            });
         });
     });
+    // Add event listeners to each of the hotspots
+    // hotSpots.forEach(function (eachSpot) {
+    //     eachSpot.addEventListener('mouseover', zoomPhoto);
+    //     eachSpot.addEventListener('mouseover', function(){
+    //         document.querySelector('body').className = 'pagecolor2';
+    //     });
+
+    //     eachSpot.addEventListener('mouseout', function () {
+    //         thisSpot = 'out';
+    //         console.log(thisSpot);
+
+    //         document.querySelector('body').className = 'pagecolor1';            
+    //         hideButton();
+
+    //         document.addEventListener('keydown', function(e){
+    //             if(e.key === 'Escape'){
+    //                 theImg.className = 'start';
+    //             }
+    //         });
+
+
+    //     });
+    // });
 
     /* This event listener fires while the mouse is moving.
     If the value of thisSpot is 'out' you are not over a hotspot. 
@@ -121,20 +137,23 @@
             //console.log(fruitButton[i])
             fruitButton[i].addEventListener('click', function(e){
                 e.preventDefault();
+                fruitButton[i].innerHTML += '<audio controls autoplay><source src="harp.wav" type="audio/wav" class="hidden"></audio>';
                 fruitOverlay[i].className = 'showing';
             });
-
-            overlayClose[i].addEventListener('click', function(e){
-                e.preventDefault();
-                fruitOverlay[i].className = 'hidden';
-            });
-            // document.querySelector('.close')
 
             document.addEventListener('keydown', function(e){
                 if(e.key === 'Escape'){
                     fruitOverlay[i].className = 'hidden';
                 }
             });
+
+            overlayClose[i].addEventListener('click', function(e){
+                e.preventDefault();
+                overlayClose[i].innerHTML += '<audio controls autoplay><source src="click.wav" type="audio/wav" class="hidden"></audio>';
+                fruitOverlay[i].className = 'hidden';
+            });
+            // document.querySelector('.close')
+
         }
     }
 
@@ -147,5 +166,11 @@
         }
     }
 
-    // game.innerHTML += '<audio controls autoplay><source src="roll.mp3" type="audio/mp3"></audio>'
+    document.querySelector('#music').addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector('#music').innerHTML += '<audio controls autoplay><source src="beats.wav" type="audio/wav" class="hidden"></audio>';
+        // document.querySelector('#music').innerHTML += 'Stop Music';
+    });
+
+
 })();

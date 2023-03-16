@@ -131,15 +131,15 @@ header p a:hover {
     background: #d5fff597;
 }
 
-/* dish placement */
-#raspberry {
-    top: 360px;
+/* dish placement with svgs */
+/* #raspberry {
+    top: 340px;
     left: 375px;
 }
 
 #salmon {
-    top: 250px;
-    left: 10px;
+    top: 255px;
+    left: -10px;
 }
 
 #pineapple {
@@ -148,21 +148,43 @@ header p a:hover {
 }
 
 #dimsum {
-    top: 10px;
+    top: -5px;
     left: 560px;
+} */
+
+/* dish placement for now */
+#ramen {
+    top: 200px;
+    left: 720px;
+}
+
+#raspberry {
+    top: 360px;
+    left: 435px;
+}
+
+#salmon {
+    top: 250px;
+    left: 70px;
+}
+
+#pineapple {
+    top: 30px;
+    left: 220px;
+}
+
+#dimsum {
+    top: 10px;
+    left: 620px;
 }
 
 #ramen {
     top: 210px;
-    left: 720px;
+    left: 780px;
 }
 
+
 /* hover and zoom effects */
-#esc {
-    position: relative;
-    top: 200px;
-    left: 100px;
-}
 
 .start {
     width: 1050px;

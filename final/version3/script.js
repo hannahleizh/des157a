@@ -4,7 +4,8 @@
 
     const container = document.querySelector('#container');
     const hotSpots = document.querySelectorAll('#container div');
-    const theImg = document.querySelector('div img');
+    const theImg = document.querySelector('#container img');
+
     // will be used to determine which hotspot div you mouse over, if any.
     let thisSpot;
     // will be used to determine when the mouse has stopped moving.
@@ -19,6 +20,7 @@
     const fruitButton = document.querySelectorAll("#container p a");
     const fruitOverlay = document.querySelectorAll("#container2 section");
     const overlayClose = document.querySelectorAll("#container2 section article button");
+
 
 
     // Zoom in and out with hover
