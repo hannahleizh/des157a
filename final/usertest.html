@@ -10,25 +10,91 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <title>User Test Results</title>
+
+    <style>
+        article {
+            background: rgb(200, 230, 200);
+            border-radius: 10px;
+            width: 550px;
+            height: 670px;
+            padding: 30px;
+            margin: auto;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        body {
+            margin: auto;
+        }
+
+        header {
+            padding: 15px;
+        }
+
+        footer {
+            padding: 60px;
+            height: 70px;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            border-radius: 10px;
+            background: rgb(230, 236, 192);
+            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        button:hover {
+            background: rgb(201, 203, 181);
+        }
+
+        footer button a {
+            text-decoration: none;
+            color: rgb(97, 113, 97);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>User Test Results</h1>
-        <h2>Hannah Lei  ||  DES157A</h2>
+        <h2>Hannah Lei   ||   DES157A</h2>
     </header>
     <main>
         <article>
-            <h1>Section</h1>
-            <p>Paragraph</p>
+            <h1>Key Observations</h1>
+            <ul>
+                <li>
+                    <h3>Zoom Overload</h3>
+                    <p>The zoom in/out feature from hovering is too much movement that is too easily onset. It's overloading for the user and not very pleasant when the mouse isn't moved in exactly the right way.</p>
+                </li>
+                <li>
+                    <h3>Desire to Rotate</h3>
+                    <p>Users almost expected a rotation feature for the lazy susan because of the illustrated connotation. They had a desire to be able to spin the dishes/lazy susan</p>
+                </li>
+                <li>
+                    <h3>Background Overload</h3>
+                    <p>The changing gradient background felt too jarring (especially with the janky zoom feature) when zooming in and out of the dishes. Users wished the background stayed the same or was less when zooming.</p>
+                </li>
+                <li>
+                    <h3>Music Goes Unnoticed</h3>
+                    <p>Playing background music wasn't really noticed. It may be unnecessary or it could be expanded on. Users felt that more interaction would be nice - keeping the play/pause buttons and other.</p>
+                </li>
+            </ul>
         </article>
         <article>
-            <h1>Section</h1>
-            <p>Paragraph</p>
-        </article>
-        <article>
-            <h1>Section</h1>
-            <p>Paragraph</p>
+            <h1>Plans to Change</h1>
+            <p>I got a lot of really good user feedback during the test session, and a lot of ideas for how I would like to implement and revise my project. I would like to try rotating the lazy susan, but am not sure how I would be able to spin it the way I would need. Also, I mainly want to fix the jankiness of the zoom feature. Users suggested taking it out and just adding a spin feature, then possibly zooming when you click on a dish (but also possibly no zoom). Also taking out the change in background color when there is a zoom.</p>
         </article>
     </main>
+    <footer>
+        <button><a href="https://hannahleizh.github.io/des157a/">Back to Portal</a></button>
+        <button><a href="https://hannahleizh.github.io/des157a/">My Project</a></button>
+    </footer>
 </body>
 </html>
