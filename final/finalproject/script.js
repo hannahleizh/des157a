@@ -1,7 +1,6 @@
 (function (){
     'use strict';
     console.log('reading js');
-    alert("Hi there! It's great to have you here. My site is a collection of dishes that I've enjoyed per each graphic that you see. As you hover over each plate, it's meant to zoom in and a button to learn more will appear. Moving your mouse out at any point should zoom the screen back out. As you navigate through my site, I'd like you to learn more about each of the dishes. I'd like you to play music, and zoom in and out of the dishes or between dishes. ")
 
     const container = document.querySelector('#container');
     const hotSpots = document.querySelectorAll('#container div');
