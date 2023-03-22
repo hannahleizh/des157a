@@ -93,7 +93,7 @@ header h1 {
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-        typing 9s steps(40, end),
+        typing 5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
@@ -179,7 +179,6 @@ header p a:hover {
 
 .spin {
     transform: rotate3d(0.1, 1, 0.1, 6.278rad);
-    /* spin by 72 % each way  3.142*/
 }
 
 /* dish placement */
