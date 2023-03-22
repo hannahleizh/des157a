@@ -89,7 +89,6 @@
     openOverlay();
     function openOverlay(){
         for(let i = 0; i < fruitOverlay.length; i++){
-            //console.log(fruitButton[i])
             fruitButton[i].addEventListener('click', function(e){
                 e.preventDefault();
                 fruitButton[i].innerHTML += '<audio controls autoplay><source src="harp.wav" type="audio/wav" class="hidden"></audio>';
@@ -107,8 +106,6 @@
                 overlayClose[i].innerHTML += '<audio controls autoplay><source src="click.wav" type="audio/wav" class="hidden"></audio>';
                 fruitOverlay[i].className = 'hidden';
             });
-            // document.querySelector('.close')
-
         }
     }
 
