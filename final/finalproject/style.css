@@ -164,7 +164,7 @@ header p a:hover {
     font-size: x-large;
     color: #25302fa4;
 
-    background: #d5fff597;
+    background: #ddfff7cc;
     border: 0px solid;
     padding: 10px;
     width: 150px;
@@ -175,6 +175,11 @@ header p a:hover {
 
 #spin:hover {
     background: #d5fff597;
+}
+
+.spin {
+    transform: rotate3d(0.1, 1, 0.1, 6.278rad);
+    /* spin by 72 % each way  3.142*/
 }
 
 /* dish placement */
