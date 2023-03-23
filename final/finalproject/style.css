@@ -176,7 +176,7 @@ header p a:hover {
 }
 
 .spin {
-    transform: rotate3d(0.1, 1, 0.1, 6.278rad);
+    transform: rotate3d(0.3, 0, 0.1, 6.28rad);
 }
 
 /* dish placement */
